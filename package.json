@@ -1,0 +1,19 @@
+{
+  "name": "cms-cms",
+  "version": "1.0.0",
+  "description": "Cms markup",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "parcel templates/views/*.html -d dev",
+    "build": "parcel build templates/views/*.html -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^4.1.7",
+    "posthtml-include": "^1.2.0",
+    "sass": "^1.15.1"
+  }
+}
