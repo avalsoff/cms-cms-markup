@@ -1,0 +1,84 @@
+.button {
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  outline: none;
+  display: inline-flex;
+  vertical-align: top;
+  padding: 10px 12px;
+  color: $font-2;
+  background: $accent;
+  box-shadow: 0px 3px 6px rgba($accent, .3);
+  border: none;
+  border-radius: 8px;
+
+  &:hover, &:focus {
+    background: lighten($accent, 5%);
+  }
+
+  &:active {
+    background: darken($accent, 1%);
+  }
+
+  &__icon {
+    display: block;
+    margin-left: 15px;
+    line-height: 0;
+  }
+
+  &--type {
+    &--action {
+      background: $action;
+      box-shadow: 0px 3px 6px rgba($action, .3);
+
+      &:hover, &:focus {
+        background: lighten($action, 5%);
+      }
+
+      &:active {
+        background: darken($action, 1%);
+      }
+    }
+
+    &--iconed {
+      position: relative;
+      background: $bg-blank;
+      border: 1px solid $action; 
+      box-shadow: none;
+      border-radius: 50px;
+      color: $action;
+      padding: 9px 15px;
+
+      &:hover, &:focus {
+        background: $bg-blank;
+        border: 1px solid lighten($action, 10%);
+        color: lighten($action, 10%);
+
+        .button__icon svg path {
+          fill: lighten($action, 10%);
+        }
+      }
+      
+      &:active {
+        background: $bg-blank;
+        border: 1px solid darken($action, 1%);
+        color: darken($action, 1%);
+
+        .button__icon svg path {
+          fill: darken($action, 1%);
+        }
+      }
+    }
+  }
+
+  &--size {
+    &--md {
+      padding: 5px 8px;
+    }
+    
+    &--wide {
+      display: block;
+      width: 100%;
+    }
+  }
+}
