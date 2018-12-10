@@ -1,0 +1,29 @@
+.login {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+  &__body {
+    display: flex;
+  }
+
+  &__aside {
+    width: 900px;
+    background-image: url('../images/profobr-comp.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+
+  &__copyright {  
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__description {
+    opacity: .3;
+  }
+}

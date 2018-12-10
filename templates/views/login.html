@@ -1,0 +1,48 @@
+<include src="../partials/head.html"></include>
+
+<body class="login__body">
+
+  <aside class="login__aside">
+
+  </aside>
+
+  <main class="login">
+    <div class="login-logo">
+      <div class="login-logo__image-wrapper">
+        <img src="../../images/logo.png" alt="Логотип" class="login-logo__image">
+      </div>
+      <p class="login-logo__description">
+        Портал профессионального образования
+        Хабаровского края          
+      </p>
+
+    </div>
+
+    
+    <form class="login__auth auth-form" action="">
+      <h1 class="auth-form__heading heading">Авторизация</h1>
+      <div class="input input--labeled auth-form__input">
+        <label class="input__label">
+          <span class="input__title">Логин (email)</span>
+          <input class="input__input" type="text">
+        </label>
+      </div>
+      <div class="input input--labeled auth-form__input">
+        <label class="input__label">
+          <span class="input__title">Пароль</span>
+          <input class="input__input" type="text">
+        </label>
+      </div>
+      <button class="button button--size--wide auth-form__login">Войти в админ. панель</button>
+      <a href="#" class="link auth-form__forgot">Забыли пароль?</a>
+    </form>
+
+    <div class="login__copyright">
+      <p class="login__description">2018, Компания. Все права защищены.</p>
+      <a class="login__support link" href="#">Техническая поддержка</a>
+    </div>
+  </main>
+
+  <script src="../../js/index.js"></script>
+</body>
+<include src="../partials/footer.html"></include>

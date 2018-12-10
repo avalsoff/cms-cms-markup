@@ -1,0 +1,9 @@
+.link {
+  color: #005ED0;
+  text-decoration: none;
+  transition: color .15s ease;
+
+  &:hover {
+    color: $action;
+  }
+}

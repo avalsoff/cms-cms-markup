@@ -1,0 +1,12 @@
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  padding-right: 20px;
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+}

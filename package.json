@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run serve",
-    "serve": "parcel templates/views/*.html -d dev",
+    "serve": "parcel templates/views/*.html -d dev --no-hmr",
     "build": "parcel build templates/views/*.html -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
