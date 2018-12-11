@@ -1,6 +1,27 @@
 .login-logo {
-  width: 300px;
+  max-width: 300px;
   text-align: center;
   font-size: 15px;
   margin-top: 36px;
+
+  @media only screen and (max-width: 374px) {
+    margin-top: 15px;
+  }
+
+  &__description {
+    margin-top: 14px;
+  }
+
+  &__image-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+    width: 69px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  &__image {
+    @include image-contain;
+  }
 }

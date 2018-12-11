@@ -1,29 +1,48 @@
 .login {
+  flex: 0 0 auto;
   padding: 0 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   height: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+
+  @media only screen and (max-width: 900px) {
+    padding: 0 20px;
+  }
 
   &__body {
     display: flex;
+    justify-content: stretch;
   }
 
   &__aside {
     width: 900px;
+    min-width: 330px;
     background-image: url('../images/profobr-comp.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%;
+    background-color: $accent;
+
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
   }
 
   &__copyright {  
     margin-bottom: 40px;
     text-align: center;
+
+    @media only screen and (max-width: 374px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__description {
-    opacity: .3;
+    color: $font-4;
+    margin-bottom: 5px;
   }
 }

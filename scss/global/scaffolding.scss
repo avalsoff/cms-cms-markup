@@ -6,6 +6,7 @@ html {
 
 *, *::after, *::before {
   box-sizing: inherit;
+  word-wrap: break-word;
 }
 
 html, body {
@@ -31,4 +32,8 @@ body, a, button, input {
   line-height: 20px;
   font-family: 'Circle';
   color: $font-1;
+}
+
+p {
+  margin: 0;
 }

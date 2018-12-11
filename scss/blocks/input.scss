@@ -42,4 +42,14 @@
       }
     }
   }
+
+  &--password & {
+    &__input {
+      letter-spacing: 3px;
+
+      &::placeholder {
+        letter-spacing: normal;
+      }
+    }
+  }
 }
