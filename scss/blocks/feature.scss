@@ -1,0 +1,53 @@
+.feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $bg-light;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 760px;
+
+  &__text {
+    max-width: 350px;
+    margin-right: 30px;
+  }
+
+  &__title {
+    margin-bottom: 7px;
+  }
+
+  &__description {
+    color: $font-5;
+  }
+
+  &__links {
+    @include list-reboot;
+    display: flex; 
+  }
+
+  &__link {
+    margin-right: 30px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+
+  &--color {  
+    &--em {
+      background-color: $success;
+
+      .feature {
+        &__title {
+          color: $font-2;
+        }
+
+        &__description {
+          color: $font-2;
+        }      
+      }
+    }
+  }
+}
+

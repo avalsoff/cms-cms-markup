@@ -1,0 +1,56 @@
+.info-group {
+  padding-top: 20px;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  &__content {
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba($accent, .05);
+  }
+
+  &__entry {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }
+
+  &__key {
+    font-size: 12px;
+    line-height: 17px;
+    color: rgba($font-1, .5);
+    margin-right: 10px;
+  }
+
+  &__value {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  &__hr {
+    margin-top: 12px;
+    margin-bottom: 7px;
+  }
+
+  &__title-val {
+    display: block;
+    text-align: center;
+  }
+
+  &__title-key {
+    display: block;
+    text-align: center;
+    color: rgba($font-1, .5);
+  }
+}

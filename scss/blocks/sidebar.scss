@@ -1,0 +1,19 @@
+.sidebar {
+  width: 310px;
+  flex: 0 0 auto;
+  display: flex;
+
+  &__menu {    
+    background: $accent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__content {
+    flex: 0 0 auto;
+    width: 220px;
+    background-color: rgba($accent, .04);
+    padding: 20px;
+  }
+}

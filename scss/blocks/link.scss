@@ -6,4 +6,14 @@
   &:hover {
     color: $action;
   }
+
+  &--type {
+    &--side {
+      color: rgba($font-2, .5);
+
+      &:hover {
+        color: $font-2;        
+      }
+    }
+  }
 }

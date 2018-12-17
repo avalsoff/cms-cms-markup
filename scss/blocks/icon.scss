@@ -1,0 +1,55 @@
+.icon {
+  display: block;
+  @include bg-icon;
+
+  &--img {
+    &--tablet {
+      background-image: url('../images/tablet.svg');
+    }
+
+    &--stats {
+      background-image: url('../images/stats.svg');
+      width: 171px;
+      height: 121px;
+      margin-top: 5px;
+      margin-left: -20px;
+    }
+
+    &--profobr {
+      background-image: url('../images/logo-profobr.svg');
+      width: 37px;
+      height: 32px;
+    }
+
+    &--gear {
+      background-image: url('../images/gear.svg');
+      height: 32px;
+      width: 32px;
+    }
+
+    &--people {
+      background-image: url('../images/people.svg');
+      height: 30px;
+      width: 32px;
+    }
+
+    &--list {
+      background-image: url('../images/lsit.svg');
+      height: 32px;
+      width: 24px;
+    }
+
+    &--stack {
+      background-image: url('../images/stack.svg');
+      height: 36px;
+      width: 36px;
+    }
+
+    &--house {
+      background-image: url('../images/house.svg');
+      height: 32px;
+      width: 32px;
+    }
+  }
+  
+}

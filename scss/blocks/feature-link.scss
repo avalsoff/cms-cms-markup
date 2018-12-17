@@ -1,0 +1,30 @@
+.feature-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $accent;
+  border-radius: 15px;
+  color: $font-2;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+
+  &__icon {
+    width: 30px;
+    height: 48px;
+    margin-bottom: 13px;
+  }
+
+  &__title {
+    line-height: 14px;
+  }
+
+  &__subtitle {
+    color: rgba($font-2, .5);
+    font-size: 10px;
+    line-height: 15px;
+  }
+}

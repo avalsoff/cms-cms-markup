@@ -1,0 +1,35 @@
+.sidebar-profile {
+  width: 60px;
+  margin: 0 auto;
+  margin-bottom: 9px;
+
+  &__image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 7px;
+  }
+
+  &__img {
+    @include image-contain;
+  }
+
+  &__site {
+    font-size: 10px;
+    line-height: 15px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+  }
+
+  &__edit {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 10px;
+  }
+}

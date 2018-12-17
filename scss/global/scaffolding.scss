@@ -4,12 +4,15 @@ html {
   box-sizing: border-box;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
   word-wrap: break-word;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -27,7 +30,10 @@ html, body {
   font-weight: 400;
 }
 
-body, a, button, input {
+body,
+a,
+button,
+input {
   font-size: 14px;
   line-height: 20px;
   font-family: 'Circle';
@@ -36,4 +42,9 @@ body, a, button, input {
 
 p {
   margin: 0;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid rgba($font-1, .1);
 }

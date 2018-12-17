@@ -1,0 +1,12 @@
+.admin-menu {
+  display: flex;
+
+  &__main-wrapper {
+    overflow-y: auto;
+    width: 100%;
+  }
+
+  &__main-inner {
+    height: 2000px;
+  }
+}

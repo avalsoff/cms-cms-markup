@@ -1,0 +1,21 @@
+.main-menu {
+  @include list-reboot;
+  padding: 15px;
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+
+    &--active {
+      background: rgba(#fff, .15);
+      border-radius: 8px;
+    }
+  }
+}
