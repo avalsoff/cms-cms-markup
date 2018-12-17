@@ -48,6 +48,25 @@
     </div>
 
     <div class="sidebar__content">
+      <div class="profile-group">
+        <div class="profile-group__image-wrapper">
+          <img src="../../images/profile.jpg" alt="" class="profile-group__img">
+        </div>
+        <p class="profile-group__name">Иванова Анна</p>
+        <small class="profile-group__user">
+          Администратор портала
+        </small>
+        <p class="profile-group__stats">
+          <small class="profile-group__stats-item">10</small>
+          /
+          <small class="profile-group__stats-item">50</small>
+          /
+          <small class="profile-group__stats-item">3000</small>
+        </p>
+        <p class="profile-group__stats-title">
+          страниц за день, месяц, всего
+        </p>
+      </div>
       <div class="info-group">
         <div class="info-group__header">
           <h4 class="heading heading--type--group info-group__heading">Характеристики</h4>
@@ -116,46 +135,61 @@
 
   <main class="admin-menu__main-wrapper">
     <div class="admin-menu__main-inner">
-      <div class="feature feature--color--em">
-        <i class="icon icon--img--stats feature__icon"></i>
-        <div class="feature__text">
-          <h3 class="heading heading--size--sm feature__title">Быстрый доступ к разделам</h3>
-          <p class="feature__description">Начните работу прямо сейчас в нужном разделе, нажав на ссылки. Данные ссылки
-            обновляются автоматически на основе ваших прошлой взаимодействий с административной панелью.</p>
+      <div style="height: 35px; width: 100%; border: 1px solid #000;"></div>
+
+      <h1 class="heading">Панель управления</h1>
+
+      <div class="feature__features">
+        <div class="feature feature--color--em">
+          <i class="icon icon--img--stats feature__icon"></i>
+          <div class="feature__text">
+            <h3 class="heading heading--size--sm feature__title">Быстрый доступ к разделам</h3>
+            <p class="feature__description">Начните работу прямо сейчас в нужном разделе, нажав на ссылки. Данные ссылки
+              обновляются автоматически на основе ваших прошлой взаимодействий с административной панелью.</p>
+          </div>
+          <ul class="feature__links">
+            <li class="feature__link">
+              <a class="feature-link" href="#">
+                <i class="icon icon--img--tablet feature-link__icon"></i>
+                <b class="feature-link__title">Руководства</b>
+                <small class="feature-link__subtitle">по эксплуатации</small>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="feature__links">
-          <li class="feature__link">
-            <a class="feature-link" href="#">
-              <i class="icon icon--img--tablet feature-link__icon"></i>
-              <b class="feature-link__title">Руководства</b>
-              <small class="feature-link__subtitle">по эксплуатации</small>
-            </a>
-          </li>
-        </ul>
+  
+        <div class="feature">
+          <div class="feature__text">
+            <h3 class="heading heading--size--sm feature__title">Быстрый доступ к разделам</h3>
+            <p class="feature__description">Начните работу прямо сейчас в нужном разделе, нажав на ссылки. Данные ссылки
+              обновляются автоматически на основе ваших прошлой взаимодействий с административной панелью.</p>
+          </div>
+          <ul class="feature__links">
+            <li class="feature__link">
+              <a class="feature-link" href="#">
+                <i class="icon icon--img--tablet feature-link__icon"></i>
+                <b class="feature-link__title">Новости</b>
+                <small class="feature-link__subtitle">таблица</small>
+              </a>
+            </li>
+            <li class="feature__link">
+              <a class="feature-link" href="#">
+                <i class="icon icon--img--tablet feature-link__icon"></i>
+                <b class="feature-link__title">События</b>
+                <small class="feature-link__subtitle">таблица</small>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="feature">
-        <div class="feature__text">
-          <h3 class="heading heading--size--sm feature__title">Быстрый доступ к разделам</h3>
-          <p class="feature__description">Начните работу прямо сейчас в нужном разделе, нажав на ссылки. Данные ссылки
-            обновляются автоматически на основе ваших прошлой взаимодействий с административной панелью.</p>
-        </div>
-        <ul class="feature__links">
-          <li class="feature__link">
-            <a class="feature-link" href="#">
-              <i class="icon icon--img--tablet feature-link__icon"></i>
-              <b class="feature-link__title">Новости</b>
-              <small class="feature-link__subtitle">таблица</small>
-            </a>
-          </li>
-          <li class="feature__link">
-            <a class="feature-link" href="#">
-              <i class="icon icon--img--tablet feature-link__icon"></i>
-              <b class="feature-link__title">События</b>
-              <small class="feature-link__subtitle">таблица</small>
-            </a>
-          </li>
-        </ul>
+      <div class="header-composition">
+        <h2 class="heading heading--size--md">Последние операции</h2>
+        <button class="button button--type--action">Посмотреть все</button>
+      </div>
+
+      <div class="table" style="border: 1px solid #000; height: 1500px;">
+
       </div>
 
     </div>

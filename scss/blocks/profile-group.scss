@@ -1,0 +1,48 @@
+.profile-group {
+  text-align: center;
+  font-size: 12px;  
+  border-bottom: 1px solid rgba($font-1, .1);
+  padding-bottom: 15px;
+
+  &__image-wrapper {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid $action;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 7px;
+  }
+
+  &__img {
+    @include image-contain;
+  }
+
+  &__stats {
+    font-size: 25px;
+    line-height: 29px;
+  }
+  
+  &__name {
+    display: block;
+    margin-bottom: 1px;
+  }
+
+  &__user {
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  &__stats {
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  &__user,
+  &__stats-title {
+    font-size: 10px;
+    color: rgba($font-1, .5);
+  }
+
+}
