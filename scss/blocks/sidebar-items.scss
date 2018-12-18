@@ -1,0 +1,20 @@
+.sidebar-items {
+  @include list-reboot;
+  margin-top: 20px;;
+
+  &__link {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+
+    &--accent,
+    &:hover {
+      background: rgba($accent, .1);      
+    }
+  }
+
+  &__item {
+    margin-bottom: 10px;
+  }
+}

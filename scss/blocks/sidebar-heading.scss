@@ -1,0 +1,29 @@
+.sidebar-heading {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba($font-1, .13);
+
+  &__heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 0;
+    font-weight: bold;
+  }
+
+  &__icon {
+    margin-right: 7px;
+  }
+
+  &__subtitle {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    color: rgba($font-1, .4);
+    display: block;
+    width: 100%;
+    margin-left: 23px;
+    margin-top: 2px;
+  }
+}
