@@ -1,0 +1,27 @@
+.table {
+  overflow-x: auto;
+  word-break: keep-all;
+  white-space: nowrap;
+  
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    td, th {
+      height: 54px;
+      padding: 0 10px;
+      &:first-of-type {
+        padding-left: 15px;
+      }
+    }
+
+    th {
+      text-align: left;
+    }
+
+    tr {
+      height: 54px;
+      border-bottom: 1px solid #E0E0E0;
+    }
+  }
+}
