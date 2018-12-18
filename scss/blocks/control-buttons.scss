@@ -1,0 +1,17 @@
+.control-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__group {
+    display: flex; 
+  }
+
+  &__button {
+    margin-right: 15px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
