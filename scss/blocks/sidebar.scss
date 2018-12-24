@@ -11,9 +11,14 @@
   }
 
   &__content {
+    overflow-y: auto;
+  }
+  
+  &__content-inner {
     flex: 0 0 auto;
     width: 220px;
     background-color: rgba($accent, .04);
     padding: 20px;
+    height: 100%;
   }
 }
