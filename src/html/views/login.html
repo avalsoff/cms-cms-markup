@@ -1,4 +1,4 @@
-<include src="../partials/head.html"></include>
+<%= _.template(require('./../includes/header.html'))() %>
 
 <body class="login__body">
 
@@ -9,7 +9,7 @@
   <main class="login">
     <div class="login-logo">
       <div class="login-logo__image-wrapper">
-        <img src="../../images/logo.png" alt="Логотип" class="login-logo__image">
+        <img src="../../img/logo.png" alt="Логотип" class="login-logo__image">
       </div>
       <p class="login-logo__description">
         Портал профессионального образования
@@ -46,4 +46,4 @@
   <script src="../../js/index.js"></script>
 </body>
 
-<include src="../partials/footer.html"></include>
+<%= _.template(require('./../includes/footer.html'))() %>

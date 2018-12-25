@@ -37,7 +37,7 @@
         width: 10px;
         height: 16px;
         @include bg-icon;
-        background-image: url('../images/arrow-bottom.svg');
+        background-image: url('../img/arrow-bottom.svg');
       }
     }
 
@@ -52,7 +52,7 @@
         width: 10px;
         height: 16px;
         @include bg-icon;
-        background-image: url('../images/arrow-bottom.svg');
+        background-image: url('../img/arrow-bottom.svg');
         transform: rotate(180deg);
       }
     }

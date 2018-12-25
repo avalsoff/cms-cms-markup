@@ -1,4 +1,4 @@
-<include src="../partials/head.html"></include>
+<%= _.template(require('./../includes/header.html'))() %>
 
 <body class="admin-menu">
 
@@ -39,7 +39,7 @@
       
       <div class="sidebar__profile sidebar-profile">
         <div class="sidebar-profile__image-wrapper">
-          <img src="../../images/profobr-house.jpg" alt="" class="sidebar-profile__img">
+          <img src="../../img/profobr-house.jpg" alt="" class="sidebar-profile__img">
         </div>
         <a href="#" class="sidebar-profile__site">profobr27.ru</a>
         <a href="#" class="link link--type--side sidebar-profile__edit">Именить</a>
@@ -51,7 +51,7 @@
       <div class="sidebar__content-inner">
         <div class="profile-group">
           <div class="profile-group__image-wrapper">
-            <img src="../../images/profile.jpg" alt="" class="profile-group__img">
+            <img src="../../img/profile.jpg" alt="" class="profile-group__img">
           </div>
           <p class="profile-group__name">Иванова Анна</p>
           <small class="profile-group__user">
@@ -291,4 +291,4 @@
   <script src="../../js/index.js"></script>
 </body>
 
-<include src="../partials/footer.html"></include>
+<%= _.template(require('./../includes/footer.html'))() %>

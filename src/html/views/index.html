@@ -1,4 +1,4 @@
-<include src="../partials/head.html"></include>
+<%= _.template(require('./../includes/header.html'))(data) %>
 
 <body class="admin-menu">
 
@@ -39,7 +39,7 @@
 
       <div class="sidebar__profile sidebar-profile">
         <div class="sidebar-profile__image-wrapper">
-          <img src="../../images/profobr-house.jpg" alt="" class="sidebar-profile__img">
+          <img src="../../img/profobr-house.jpg" alt="" class="sidebar-profile__img">
         </div>
         <a href="#" class="sidebar-profile__site">profobr27.ru</a>
         <a href="#" class="link link--type--side sidebar-profile__edit">Именить</a>
@@ -133,49 +133,85 @@
         <div class="input input--required input--labeled">
           <label class="input__label">
             <span class="input__title">Название новости</span>
-            <input class="input__input" type="text" value="Совещание по вопросам среднего профессионального образования">
+            <input class="input__input" type="text" placeholder="ФИО автора">
           </label>
         </div>
 
         <div class="input input--required">
-          <input class="input__input" type="text" value="Совещание по вопросам среднего профессионального образования">
+          <input class="input__input" type="text">
         </div>
 
         <div class="input input--required">
-          <input class="input__input" type="text" value="Совещание по вопросам среднего профессионального образования">
+          <input class="input__input" type="text">
         </div>
 
         <div class="row">
           <div class="input col">
-            <input class="input__input" type="text" value="Совещание по вопросам среднего профессионального образования">
+            <input class="input__input" type="text">
           </div>
           <div class="input col">
-            <input class="input__input" type="text" value="Совещание по вопросам среднего профессионального образования">
+            <input class="input__input" type="text">
           </div>
         </div>
         <div class="row">
           <div class="input col">
-            <input class="input__input" type="text" value="Совещание по вопросам среднего профессионального образования">
+            <input class="input__input" type="text">
           </div>
           <div class="input col">
-            <input class="input__input" type="text" value="Совещание по вопросам среднего профессионального образования">
+            <input class="input__input" type="text">
           </div>
           <div class="input col">
-            <input class="input__input" type="text" value="Совещание по вопросам среднего профессионального образования">
+            <input class="input__input" type="text">
           </div>
         </div>
 
       </form>
-      
-      <select name="" id="slim-select">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="2">3</option>
-        <option value="4">4</option>
-      </select>
 
+      <div class="dropdown">
+        <button type="button" class="button button--type--action dropdown__toggler">
+          + Создать
+
+          <i class="dropdown__icon">
+            <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.17039 0.178814C0.90296 -0.0596048 0.47635 -0.0596048 0.208921 0.178814C-0.0696403 0.427158 -0.0696403 0.838542 0.208921 1.08689L5.51927 5.82119C5.78669 6.0596 6.21331 6.0596 6.48073 5.82119L11.7911 1.08689C11.9266 0.966081 12 0.80654 12 0.63285C12 0.459161 11.9266 0.29962 11.7911 0.178814C11.5237 -0.0596048 11.097 -0.0596048 10.8296 0.178814L6 4.48453L1.17039 0.178814Z"
+                fill="white" />
+            </svg>
+          </i>
+        </button>
+
+        <div class="dropdown__inner">
+          <ul class="dropdown__items">
+            <li class="dropdown__item">
+              <a class="dropdown__button" href="#">Одноsd fsdf sdf sdfddfsdf sd </a>
+            </li>
+            <li class="dropdown__item">
+              <a class="dropdown__button" href="#">Другое</a>
+            </li>
+            <li class="dropdown__item">
+              <a class="dropdown__button" href="#">Удалить</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="preview">
+
+      </div>
+
+      <div class="image-drop">
+        <input class="visually-hidden" id="file" type="file" name="img" id="img-drop1">
+        <label class="image-drop__zone" for="file">
+          <div class="image-drop__group">
+            <p class="image-drop__title">Изображения для слайдера</p>
+            <small class="image-drop__subtitle">jpg, jpeg, png, bmp, gif / до 4 Мб</small>
+          </div>
+          <div class="image-drop__group">
+            <p class="image-drop__instruction">Перетащите в область файл или выберите его с компьютера</p>
+          </div>
+        </label>
+      </div>
 
     </div>
+
   </main>
 
 
@@ -183,4 +219,4 @@
   <script src="../../js/index.js"></script>
 </body>
 
-<include src="../partials/footer.html"></include>
+<%= _.template(require('./../includes/footer.html'))() %>

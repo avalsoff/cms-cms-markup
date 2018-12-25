@@ -1,22 +1,32 @@
 {
-  "name": "cms-cms",
-  "version": "1.0.0",
-  "description": "Cms markup",
-  "main": "index.js",
+  "name": "static-site-webpack-habr",
+  "version": "2.0.0",
+  "description": "HTML template",
+  "main": "src/index.js",
   "scripts": {
-    "start": "npm run serve",
-    "serve": "parcel templates/views/*.html -d dev",
-    "build": "parcel build templates/views/*.html -d dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "cssnano": "^4.1.7",
-    "posthtml-include": "^1.2.0",
-    "sass": "^1.15.1"
+    "dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production && prettier --print-width=120 --parser html --write dist/*.html"
   },
   "dependencies": {
-    "tether-select": "^1.1.0"
+    "umbrellajs": "^3.1.0"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^2.0.2",
+    "cssnano": "^4.1.8",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.15.3",
+    "raw-loader": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "terser-webpack-plugin": "^1.2.0",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
   }
 }
