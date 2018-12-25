@@ -1,9 +1,8 @@
 .image-drop {
-  padding: 15px 45px;
-  border: 1px dashed rgba($font-1, .5);
-  border-radius: 8px;
-
   &__zone {
+    padding: 15px 18px 15px 45px;
+    border: 1px dashed rgba($font-1, .5);
+    border-radius: 8px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -16,14 +15,47 @@
     line-height: 15px;
   }
 
+  &__instruction {
+    color: rgba($font-1, .5);
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: "";
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba($accent, .1);
+      margin-left: 15px;
+      background-image: url('../img/folder.svg');
+      background-size: 18px 14px;
+      background-position: 10px 11px;
+      background-repeat: no-repeat;
+    }
+  }
+
   &__group {
     position: relative;
-    color: rgba($font-1, .5);
 
     &::after {
       content: '';
       display: inline;
       position: relative;
+    }
+  }
+
+  &--inline {
+    display: block;
+    height: 100%;
+    .image-drop {
+      &__zone {
+        padding: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
     }
   }
 }

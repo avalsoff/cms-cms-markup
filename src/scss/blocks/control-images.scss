@@ -1,0 +1,70 @@
+.control-images {
+  @include list-reboot;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -8px;
+
+  &__item {
+    margin-top: 8px;
+    margin-right: 8px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+
+    &:hover .control-images {
+      &__main-btn,
+      &__close-btn {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__main-btn,
+  &__close-btn {
+    outline: none;
+    cursor: pointer;
+    z-index: 5;
+    position: absolute;
+    transition: opacity .3s ease;
+    opacity: .15;
+    top: 10px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  &__main-btn {
+    left: 10px;
+    @include bg-icon;
+    background-image: url('../img/star.svg');
+    background-size: 16px;
+  }
+  
+  &__close-btn {
+    right: 10px;
+    @include bg-icon;
+    background-image: url('../img/image-close.svg');
+    background-size: 14px;
+  }
+
+  &__img-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 150px;
+    height: 150px;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    @include image-contain;
+  }
+}

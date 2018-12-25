@@ -193,30 +193,102 @@
           </ul>
         </div>
       </div>
-      <div id="preview">
 
-      </div>
+      <!-- <form action="https://echo.htmlacademy.ru/">
+        <div class="image-drop">
+          <input multiple class="visually-hidden" id="file" type="file" name="img" id="img-drop1">
+          <label class="image-drop__zone" for="file">
+            <div class="image-drop__group">
+              <p class="image-drop__title">Изображения для слайдера</p>
+              <small class="image-drop__subtitle">jpg, jpeg, png, bmp, gif / до 4 Мб</small>
+            </div>
+            <div class="image-drop__group">
+              <p class="image-drop__instruction">
+                Перетащите в область файл или выберите его с компьютера
+              </p>
+            </div>
+          </label>
+        </div>
 
-      <div class="image-drop">
-        <input class="visually-hidden" id="file" type="file" name="img" id="img-drop1">
-        <label class="image-drop__zone" for="file">
-          <div class="image-drop__group">
-            <p class="image-drop__title">Изображения для слайдера</p>
-            <small class="image-drop__subtitle">jpg, jpeg, png, bmp, gif / до 4 Мб</small>
+        <input type="submit" value="SUBMIT">
+      </form> -->
+
+      <ul class="control-images">
+        <li class="control-images__item">
+          <button class="control-images__main-btn"></button>
+          <div class="control-images__img-wrapper">
+            <img src="../../img/road.jpg" alt="" class="control-images__img">
           </div>
-          <div class="image-drop__group">
-            <p class="image-drop__instruction">Перетащите в область файл или выберите его с компьютера</p>
+          <button class="control-images__close-btn"></button>
+        </li>
+        <li class="control-images__item">
+          <button class="control-images__main-btn"></button>
+          <div class="control-images__img-wrapper">
+            <img src="../../img/nature-1.jpg" alt="" class="control-images__img">
           </div>
-        </label>
-      </div>
+          <button class="control-images__close-btn"></button>
+        </li>
+        <li class="control-images__item">
+          <button class="control-images__main-btn"></button>
+          <div class="control-images__img-wrapper">
+            <img src="../../img/nature-2.jpg" alt="" class="control-images__img">
+          </div>
+          <button class="control-images__close-btn"></button>
+        </li>
+        <li class="control-images__item">
+          <button class="control-images__main-btn"></button>
+          <div class="control-images__img-wrapper">
+            <img src="../../img/road.jpg" alt="" class="control-images__img">
+          </div>
+          <button class="control-images__close-btn"></button>
+        </li>
+        <li class="control-images__item">
+          <button class="control-images__main-btn"></button>
+          <div class="control-images__img-wrapper">
+            <img src="../../img/nature-1.jpg" alt="" class="control-images__img">
+          </div>
+          <button class="control-images__close-btn"></button>
+        </li>
+        <li class="control-images__item">
+          <button class="control-images__main-btn"></button>
+          <div class="control-images__img-wrapper">
+            <img src="../../img/nature-2.jpg" alt="" class="control-images__img">
+          </div>
+          <button class="control-images__close-btn"></button>
+        </li>
+        <li class="control-images__item">
+          <button class="control-images__main-btn"></button>
+          <div class="control-images__img-wrapper">
+            <img src="../../img/road.jpg" alt="" class="control-images__img">
+          </div>
+          <button class="control-images__close-btn"></button>
+        </li>
+        <li class="control-images__item">
+          <button class="control-images__main-btn"></button>
+          <div class="control-images__img-wrapper">
+            <img src="../../img/nature-1.jpg" alt="" class="control-images__img">
+          </div>
+          <button class="control-images__close-btn"></button>
+        </li>
+        <li class="control-images__item">
+          <button class="control-images__main-btn"></button>
+          <div class="control-images__img-wrapper">
+            <img src="../../img/nature-2.jpg" alt="" class="control-images__img">
+          </div>
+          <button class="control-images__close-btn"></button>
+        </li>
+        <li class="control-images__item">
+          <div class="image-drop image-drop--inline">
+            <input multiple class="visually-hidden" id="file" type="file" name="img" id="img-drop1">
+            <label class="image-drop__zone" for="file">
+              Выберите или перетащите изображение
+            </label>
+          </div>
+        </li>
+      </ul>
 
     </div>
 
   </main>
 
-
-
-  <script src="../../js/index.js"></script>
-</body>
-
-<%= _.template(require('./../includes/footer.html'))() %>
+  <%= _.template(require('./../includes/footer.html'))() %>
