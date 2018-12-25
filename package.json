@@ -10,6 +10,7 @@
     "build": "webpack --mode production && prettier --print-width=120 --parser html --write dist/*.html"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^11.2.0",
     "umbrellajs": "^3.1.0"
   },
   "devDependencies": {

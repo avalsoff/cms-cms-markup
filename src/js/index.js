@@ -1,7 +1,11 @@
 import dropdown from './dropdown'
 import u from 'umbrellajs'
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 
 dropdown('dropdown')
+
+ClassicEditor
+  .create( document.querySelector('#ckeditor'))
 
 function drop(e) {
   e.stopPropagation()
@@ -45,7 +49,7 @@ function getInput(name) {
   const html =
     `<li class="control-images__item">
       <div class="image-drop image-drop--inline">
-        <input multiple class="visually-hidden" type="file" id="${name}" name="${name}">
+        <input class="visually-hidden" type="file" id="${name}" name="${name}">
         <label class="image-drop__zone" for="${name}">
           Выберите или перетащите изображение
         </label>
@@ -62,7 +66,7 @@ const getName = (() => {
 })()
 
 function handleFiles(files) {
-  console.log('1')
+  console.log(files)
   Array.from(files).forEach(file => {
     if (!file.type.startsWith('image/')) {
       return
@@ -81,7 +85,7 @@ function handleFiles(files) {
       
     u('.control-images__item:last-of-type')
       .find('input')
-      .on('change', handleFiles)
+      .on('change', e => handleFiles(e.target.files))
 
     const reader = new FileReader()
     reader.onload = e => {
