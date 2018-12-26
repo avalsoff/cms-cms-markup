@@ -1,0 +1,31 @@
+.big-form {
+  &__group {
+    padding: 30px;
+    border-top: 1px solid #E0E0E0;
+    display: flex;
+  }
+
+  &__description {
+    flex: 0 0 30%;
+    margin-right: 7%;
+  }
+
+  &__desc-title {
+    font-size: 20px;
+    line-height: 29px;
+    margin-bottom: 8px;
+  }
+
+  &__desc-subtitle {
+    color: rgba($font-1, .8);
+  }
+
+  &__body {
+    flex: 1 1 auto;
+  }
+
+  &__header-composition {
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+}

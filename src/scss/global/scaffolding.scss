@@ -33,10 +33,11 @@ body {
 body,
 a,
 button,
-input {
+input,
+textarea {
   font-size: 14px;
   line-height: 20px;
-  font-family: 'Circle';
+  font-family: 'Circle', Arial, Helvetica, sans-serif;
   color: $font-1;
 }
 
