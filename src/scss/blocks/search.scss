@@ -1,0 +1,27 @@
+.search {
+  position: relative;
+
+  &__input {
+    border-radius: 20px;
+    border: 1px solid $action;
+    padding: 10px 15px;
+
+    &::placeholder {
+      color: $action;
+    }
+  }
+
+  &__icon {      
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    @include bg-icon;
+    background: white;
+    background-image: url('../../img/search.svg');
+    margin-right: 11px; 
+  }
+}

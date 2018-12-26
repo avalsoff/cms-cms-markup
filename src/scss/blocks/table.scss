@@ -22,6 +22,21 @@
     tr {
       height: 54px;
       border-bottom: 1px solid #E0E0E0;
+
+      &:hover {
+        background-color: rgba($action, .05);
+
+        .table-dropdown__toggler {
+
+          &::before {            
+            background-image: url('../../img/table-dots.svg');
+          }
+        }
+      }
     }
+  }  
+
+  td.table__p0 {
+    padding: 0;
   }
 }

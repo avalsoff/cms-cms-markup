@@ -41,6 +41,11 @@ textarea {
   color: $font-1;
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
 p {
   margin: 0;
 }

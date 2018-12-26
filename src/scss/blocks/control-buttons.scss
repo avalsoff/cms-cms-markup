@@ -4,7 +4,15 @@
   align-items: center;
 
   &__group {
-    display: flex; 
+    display: flex;
+
+    > * {
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
   &__button {

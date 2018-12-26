@@ -1,4 +1,4 @@
-.dropdown {
+.table-dropdown {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -8,19 +8,20 @@
     min-width: 180px;
     z-index: 10;
     display: none;
+    top: -50px;
   }
   
   &__items {
     @include list-reboot;
-    background: $bg-blank;
+    background: $font-1;
     padding: 10px;
     margin-top: 10px;
     box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    border-radius: 8px;
   }
 
   &__item {
-    padding: 4px 0;
+    padding: 4px 0 4px 28px;
     border-bottom: 1px solid rgba(#333, .1);
 
     &:first-of-type {
@@ -40,9 +41,14 @@
     border-radius: 5px;
     line-height: 17px;
     padding: 4px 6px;
+    color: $bg-blank;
 
     &:hover {
       background: rgba($accent, .1);
+    }
+
+    &--caution {
+      color: #FF3030;
     }
   }
 
@@ -51,13 +57,19 @@
   }
 
   &--opened {
-    .dropdown {
+    .table-dropdown {
       &__inner {
         display: block;
       }
 
       &__icon {
         transform: rotate(180deg);
+      }
+
+      &__toggler {
+        &::before {         
+          background-image: url('../../img/table-dota-white.svg') !important;
+        }
       }
     }
   }
@@ -77,5 +89,29 @@
   &--disabled {
     pointer-events: none;
     opacity: .3;
+  }
+
+  &__toggler {
+    outline: none;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border: none;
+    background: none;
+    position: relative;
+    top: 2px;
+    z-index: 11;
+
+    &::before {
+      padding: 0;          
+      position: absolute;
+      top: 8px;
+      left: 12px;
+      width: 4px;
+      height: 16px;
+      display: block;
+      content: "";
+      @include bg-icon;
+    }
   }
 }

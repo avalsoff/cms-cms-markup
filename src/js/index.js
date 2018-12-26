@@ -8,4 +8,5 @@ new Choices(document.querySelector('#choices'))
 ClassicEditor.create( document.querySelector('#ckeditor') )
 
 dropdown('dropdown')
+dropdown('table-dropdown')
 multiImages('control-images')
