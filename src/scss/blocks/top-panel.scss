@@ -1,0 +1,87 @@
+.top-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__support {
+    display: flex;
+    &::before {
+      display: block;
+      content: "";
+      width: 32px;
+      height: 32px;
+      @include bg-icon;
+      background-image: url('../../img/support-logo.svg');
+      margin-right: 11px; 
+    }
+  }
+
+  &__title {
+    font-size: 12px;
+    line-height: 17px;
+    display: block;
+    text-decoration: none;
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: 10px;
+    line-height: 15px;
+    color: rgba($font-1, .3);
+    text-decoration: none;
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+  }
+
+  &__ding {
+    width: 20px;
+    height: 20px;
+    @include bg-icon;
+    background-image: url('../../img/ding.svg');
+    opacity: .2;
+    margin-right: 20px;
+  }
+
+  &__photo-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+  }
+
+  &__profile {
+    margin-right: 25px;
+  }
+
+  &__photo {
+    width: 100%;
+    height: auto;
+    @include image-contain;
+  }
+
+  &__name {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  &__who {
+    color: rgba($font-1, .3);
+  }
+
+  &__go {
+    width: 24px;
+    height: 24px;
+    @include bg-icon;
+    background-image: url('../../img/go.svg');
+  }
+}

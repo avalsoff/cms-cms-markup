@@ -106,29 +106,70 @@
 
   <main class="admin-menu__main-wrapper">
     <div class="admin-menu__main-inner">
-      <div style="height: 35px; width: 100%; border: 1px solid #000;"></div>
-
-      <div class="header-composition">
-        <h1 class="heading">Редактирование новости</h1>
-        <div class="header-composition__stats">
-          250 элементов / 240 найдено / 147 отфильтровано / 20 показано
+      <div class="top-panel">
+        <div class="top-panel__group">
+          <div class="top-panel__support">
+            <div>
+              <a href="#" class="top-panel__title">Техническая поддержка</a>
+              <a href="#" class="top-panel__subtitle">Руководство по эксплуатации</a>
+            </div>
+          </div>
+        </div>
+        <div class="top-panel__group top-panel__group--flex">
+          <a href="#" class="top-panel__ding"></a>
+          <div class="top-panel__profile">
+            <div class="top-panel__photo-wrapper">
+              <img src="../../img/top-photo.jpg" alt="" class="top-panel__photo">
+            </div>
+            <div class="top-panel__name-info">
+              <p class="top-panel__name">Иванова Анна</p>
+              <small class="top-panel__who">Администратор Портала</small>
+            </div>
+          </div>
+          <a class="top-panel__go" href="#"></a>
         </div>
       </div>
 
-      <div class="control-buttons">
-        <div class="control-buttonst__group">
-          <a href="#" class="control-buttons__button button button--type--action">Создать</a>
-          <a href="#" class="control-buttons__button button button--disabled">Действие</a>
-          <a href="#" class="control-buttons__button button button--disabled">Действие</a>
+      <div class="header-composition header-composition--edit">
+        <div class="header-composition__group">
+          <h1 class="heading header-composition__heading">Редактирование новости</h1>
+          <div class="header-composition__stats">
+            ID: 57 / Создан: 20.01.2018 в 15:43 / Создатель: <a href="#" class="link">Иван Иванов</a>
+          </div>
         </div>
-        <div class="control-buttons__group">
-          <div class="pagination-control"></div>
-          <div class="search"></div>
-          <button class="control-buttons__button button button--type--action">Сохранить</a>
+        <div class="header-composition__group">
+          <input type="checkbox" name="" id="">
+          <div class="dropdown dropdown--light">
+            <button type="button" class="button button--type--action dropdown__toggler">
+              Действие
+
+              <i class="dropdown__icon">
+                <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.17039 0.178814C0.90296 -0.0596048 0.47635 -0.0596048 0.208921 0.178814C-0.0696403 0.427158 -0.0696403 0.838542 0.208921 1.08689L5.51927 5.82119C5.78669 6.0596 6.21331 6.0596 6.48073 5.82119L11.7911 1.08689C11.9266 0.966081 12 0.80654 12 0.63285C12 0.459161 11.9266 0.29962 11.7911 0.178814C11.5237 -0.0596048 11.097 -0.0596048 10.8296 0.178814L6 4.48453L1.17039 0.178814Z"
+                    fill="white" />
+                </svg>
+              </i>
+            </button>
+
+            <div class="dropdown__inner">
+              <ul class="dropdown__items">
+                <li class="dropdown__item">
+                  <a class="dropdown__button" href="#">Одноsd fsdf sdf sdfddfsdf sd </a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__button" href="#">Другое</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__button" href="#">Удалить</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button class="button button--type--action">Сохранить</button>
         </div>
       </div>
 
-      <form class="big-form" style="margin-top: 40px">
+      <form action="https://echo.htmlacademy.ru" class="big-form">
         <div class="row">
           <div class="col">
             <div class="input input--required input--labeled">
@@ -183,23 +224,19 @@
 
         <hr>
 
-
-
-
-
         <ul class="control-images">
           <li class="control-images__item">
-            <button class="control-images__main-btn"></button>
+            <button type="button" class="control-images__main-btn"></button>
             <div class="control-images__img-wrapper">
               <img src="../../img/road.jpg" alt="" class="control-images__img">
             </div>
-            <button class="control-images__close-btn"></button>
+            <button type="button" class="control-images__close-btn"></button>
           </li>
           <li class="control-images__item">
             <div class="image-drop image-drop--inline">
-              <input class="visually-hidden" type="file" name="img" id="img-drop1">
-              <label class="image-drop__zone" for="img-drop1">
-                Выберите или перетащите изображение
+              <input class="visually-hidden control-images__input" type="file" name="1slide-image" id="img-drop1">
+              <label class="image-drop__zone control-images__dropzone" for="img-drop1">
+                Выберите изображение
               </label>
             </div>
           </li>
@@ -209,24 +246,24 @@
 
         <hr>
 
-        <form action="https://echo.htmlacademy.ru/">
-          <div class="image-drop">
-            <input multiple class="visually-hidden" type="file" name="img" id="file">
-            <label class="image-drop__zone" for="file">
-              <div class="image-drop__group">
-                <p class="image-drop__title">Изображения для слайдера</p>
-                <small class="image-drop__subtitle">jpg, jpeg, png, bmp, gif / до 4 Мб</small>
-              </div>
-              <div class="image-drop__group">
-                <p class="image-drop__instruction">
-                  Перетащите в область файл или выберите его с компьютера
-                </p>
-              </div>
-            </label>
-          </div>
+        <div class="image-drop">
+          <input multiple class="visually-hidden" type="file" name="img" id="file">
+          <label class="image-drop__zone" for="file">
+            <div class="image-drop__group">
+              <p class="image-drop__title">Изображения для превью</p>
+              <small class="image-drop__subtitle">jpg, jpeg, png, bmp, gif / до 4 Мб</small>
+            </div>
+            <div class="image-drop__group">
+              <p class="image-drop__instruction">
+                Выберите файл
+              </p>
+            </div>
+          </label>
+        </div>
 
-          <textarea placeholder="Описание новости" style="width: 100%; margin-top: 20px; resize: none; padding: 20px"></textarea>
-        </form>
+        <textarea placeholder="Описание новости" style="width: 100%; margin-top: 20px; resize: none; padding: 20px"></textarea>
+
+        <input type="submit">
 
 
       </form>
