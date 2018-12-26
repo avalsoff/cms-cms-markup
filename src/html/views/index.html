@@ -131,18 +131,28 @@
       </div>
 
       <div class="header-composition header-composition--edit">
-        <div class="header-composition__group">
-          <h1 class="heading header-composition__heading">Редактирование новости</h1>
-          <div class="header-composition__stats">
-            ID: 57 / Создан: 20.01.2018 в 15:43 / Создатель: <a href="#" class="link">Иван Иванов</a>
+        <div class="header-composition__group header-composition__left">
+          <a href="#" class="header-composition__back">
+          </a>
+          <div>
+            <h1 class="heading header-composition__heading">Редактирование новости</h1>
+            <div class="header-composition__stats">
+              ID: 57 / Создан: 20.01.2018 в 15:43 / Создатель: <a href="#" class="link">Иван Иванов</a>
+            </div>
           </div>
         </div>
-        <div class="header-composition__group">
-          <input type="checkbox" name="" id="">
-          <div class="dropdown dropdown--light">
+        <div class="header-composition__group header-composition__group--flex">
+          <label class="big-check header-composition__big-check">
+            <input class="big-check__input visually-hidden" type="checkbox" name="" id="">
+            <div class="big-check__check"></div>
+            <div class="big-check__text">
+              <p class="big-check__title">Активность записи</p>
+              <small class="big-check__subtitle">Свойство видимости в ресурсе</small>
+            </div>
+          </label>
+          <div class="dropdown dropdown--light header-composition__btn">
             <button type="button" class="button button--type--action dropdown__toggler">
               Действие
-
               <i class="dropdown__icon">
                 <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.17039 0.178814C0.90296 -0.0596048 0.47635 -0.0596048 0.208921 0.178814C-0.0696403 0.427158 -0.0696403 0.838542 0.208921 1.08689L5.51927 5.82119C5.78669 6.0596 6.21331 6.0596 6.48073 5.82119L11.7911 1.08689C11.9266 0.966081 12 0.80654 12 0.63285C12 0.459161 11.9266 0.29962 11.7911 0.178814C11.5237 -0.0596048 11.097 -0.0596048 10.8296 0.178814L6 4.48453L1.17039 0.178814Z"

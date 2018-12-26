@@ -61,8 +61,16 @@
       }
     }
   }
-
-  &__toggler {
-    
+  
+  &--light & {
+    &__toggler {
+      border: 1px solid $font-1;
+      background: $bg-blank;
+      color: $font-1;
+      box-shadow: none;
+    }
+    &__icon svg path {
+      fill: $font-1;
+    }
   }
 }
