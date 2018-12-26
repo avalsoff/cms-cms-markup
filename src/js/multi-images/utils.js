@@ -3,7 +3,7 @@ export function getItem(name) {
     `<li class="${name}__item">
       <button type="button" class="${name}__main-btn"></button>
       <div class="${name}__img-wrapper">
-        <img src="../../img/road.jpg" alt="" class="${name}__img">
+        <img src="../img/road.jpg" alt="" class="${name}__img">
       </div>
       <button type="button" class="${name}__close-btn js-inline-close"></button>
     </li>`

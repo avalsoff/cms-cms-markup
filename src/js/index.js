@@ -4,7 +4,7 @@ import Choices from 'choices.js'
 import dropdown from './dropdown'
 import multiImages from './multi-images'
 
-new Choices(document.querySelector('#choices'))
+new Choices('.js-choice')
 ClassicEditor.create( document.querySelector('#ckeditor') )
 
 dropdown('dropdown')

@@ -11,7 +11,7 @@
       width: 32px;
       height: 32px;
       @include bg-icon;
-      background-image: url('../../img/support-logo.svg');
+      background-image: url('../img/support-logo.svg');
       margin-right: 11px; 
     }
   }
@@ -45,7 +45,7 @@
     width: 20px;
     height: 20px;
     @include bg-icon;
-    background-image: url('../../img/ding.svg');
+    background-image: url('../img/ding.svg');
     opacity: .2;
     margin-right: 20px;
   }
@@ -82,6 +82,6 @@
     width: 24px;
     height: 24px;
     @include bg-icon;
-    background-image: url('../../img/go.svg');
+    background-image: url('../img/go.svg');
   }
 }
