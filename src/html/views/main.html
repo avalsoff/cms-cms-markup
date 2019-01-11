@@ -36,7 +36,7 @@
           </a>
         </li>
       </ul>
-      
+
       <div class="sidebar__profile sidebar-profile">
         <div class="sidebar-profile__image-wrapper">
           <img src="../../img/profobr-house.jpg" alt="" class="sidebar-profile__img">
@@ -102,10 +102,10 @@
             <hr class="info-group__hr">
             <button class="button button--size--md info-group__button">Подробнее</button>
           </div>
-  
+
         </div>
-  
-  
+
+
         <div class="info-group">
           <div class="info-group__header">
             <h4 class="heading heading--type--group info-group__heading">Тех. поддержка</h4>
@@ -127,7 +127,7 @@
               <div class="info-group__value"><a href="mailto:li@site.ru" class="link">li@site.ru</a></div>
             </div>
           </div>
-  
+
         </div>
       </div>
 
@@ -137,7 +137,30 @@
 
   <main class="admin-menu__main-wrapper">
     <div class="admin-menu__main-inner">
-      <div style="height: 35px; width: 100%; border: 1px solid #000;"></div>
+
+      <div class="top-panel">
+        <div class="top-panel__group">
+          <div class="top-panel__support">
+            <div>
+              <a href="#" class="top-panel__title">Техническая поддержка</a>
+              <a href="#" class="top-panel__subtitle">Руководство по эксплуатации</a>
+            </div>
+          </div>
+        </div>
+        <div class="top-panel__group top-panel__group--flex">
+          <a href="#" class="top-panel__ding"></a>
+          <div class="top-panel__profile">
+            <div class="top-panel__photo-wrapper">
+              <img src="../../img/top-photo.jpg" alt="" class="top-panel__photo">
+            </div>
+            <div class="top-panel__name-info">
+              <p class="top-panel__name">Иванова Анна</p>
+              <small class="top-panel__who">Администратор Портала</small>
+            </div>
+          </div>
+          <a class="top-panel__go" href="#"></a>
+        </div>
+      </div>
 
       <h1 class="heading">Панель управления</h1>
 
@@ -146,7 +169,8 @@
           <i class="icon icon--img--stats feature__icon"></i>
           <div class="feature__text">
             <h3 class="heading heading--size--sm feature__title">Быстрый доступ к разделам</h3>
-            <p class="feature__description">Начните работу прямо сейчас в нужном разделе, нажав на ссылки. Данные ссылки
+            <p class="feature__description">Начните работу прямо сейчас в нужном разделе, нажав на ссылки. Данные
+              ссылки
               обновляются автоматически на основе ваших прошлой взаимодействий с административной панелью.</p>
           </div>
           <ul class="feature__links">
@@ -159,11 +183,12 @@
             </li>
           </ul>
         </div>
-  
+
         <div class="feature">
           <div class="feature__text">
             <h3 class="heading heading--size--sm feature__title">Быстрый доступ к разделам</h3>
-            <p class="feature__description">Начните работу прямо сейчас в нужном разделе, нажав на ссылки. Данные ссылки
+            <p class="feature__description">Начните работу прямо сейчас в нужном разделе, нажав на ссылки. Данные
+              ссылки
               обновляются автоматически на основе ваших прошлой взаимодействий с административной панелью.</p>
           </div>
           <ul class="feature__links">
@@ -285,5 +310,5 @@
 
     </div>
   </main>
-  
-<%= _.template(require('./../includes/footer.html'))() %>
+
+  <%= _.template(require('./../includes/footer.html'))() %>

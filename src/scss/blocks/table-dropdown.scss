@@ -3,6 +3,13 @@
   display: inline-block;
   vertical-align: top;
 
+  &__toggler:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+    &::before {
+      background-image: url('../img/table-dots.svg');
+    }
+  }
+
   &__inner {
     position: absolute;
     min-width: 180px;
@@ -67,7 +74,9 @@
       }
 
       &__toggler {
-        &::before {         
+        z-index: 11;
+
+        &::before {
           background-image: url('../img/table-dota-white.svg') !important;
         }
       }
@@ -100,7 +109,7 @@
     background: none;
     position: relative;
     top: 2px;
-    z-index: 11;
+    z-index: 1;
 
     &::before {
       padding: 0;          

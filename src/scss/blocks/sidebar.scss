@@ -1,5 +1,4 @@
 .sidebar {
-  width: 310px;
   flex: 0 0 auto;
   display: flex;
 
@@ -20,5 +19,34 @@
     background-color: rgba($accent, .04);
     padding: 20px;
     height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1005px) {
+  .sidebar {
+    &__content {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  body .sidebar {
+    &__menu {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__profile {
+      display: none;
+    }
+    .main-menu {
+      display: flex;
+      overflow-x: auto;
+
+      > li {
+        margin-bottom: 0;
+      }
+    }
   }
 }
