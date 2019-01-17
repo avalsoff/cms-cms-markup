@@ -191,7 +191,7 @@
           </div>
 
           <div class="big-form__body">
-            <div class="row">
+            <div class="row big-form__lg-row">
               <div class="col">
                 <div class="input input--required">
                   <label class="input__label">
@@ -205,7 +205,7 @@
                     <span class="input__title">Название новости</span>
                   </label>
                 </div>
-                <div class="row">
+                <div class="row big-form__md-row">
                   <div class="col">
                     <div class="input input--required">
                       <label class="input__label">
@@ -239,7 +239,7 @@
                     <span class="input__title">Название новости</span>
                   </label>
                 </div>
-                <div class="row">
+                <div class="row big-form__md-row">
                   <div class="col">
                     <div class="input input--required">
                       <label class="input__label">
@@ -274,24 +274,86 @@
 
           <div class="big-form__body">
             <ul class="control-images">
+              <!-- Изображения с сервера -->
               <li class="control-images__item">
-                <button type="button" class="control-images__main-btn"></button>
+                <button @click="setMainImage" type="button" class="control-images__main-btn"></button>
+                <div class="control-images__img-wrapper">
+                  <img src="../../img/nature-2.jpg" alt="" class="control-images__img">
+                </div>
+                <button @click="rmRemoteElement" type="button" class="control-images__close-btn"></button>
+              </li>
+              <li class="control-images__item">
+                <button @click="setMainImage" type="button" class="control-images__main-btn"></button>
                 <div class="control-images__img-wrapper">
                   <img src="../../img/road.jpg" alt="" class="control-images__img">
                 </div>
-                <button type="button" class="control-images__close-btn"></button>
+                <button @click="rmRemoteElement" type="button" class="control-images__close-btn"></button>
               </li>
-              <li class="control-images__item">
-                <div class="image-drop image-drop--inline">
-                  <input class="visually-hidden control-images__input" type="file" name="1slide-image" id="img-drop1">
-                  <label class="image-drop__zone control-images__dropzone" for="img-drop1">
-                    Выберите изображение
-                  </label>
-                </div>
-              </li>
+              
+              <!-- Изображения только что загруженные юзером -->
+              <template v-for="(el, i) in thumbs">
+
+                <li :key="'t'+el.id" v-show="el.showThumb" class="control-images__item">
+                  <button @click="setMainImage" type="button" class="control-images__main-btn"></button>
+                  <div class="control-images__img-wrapper">
+                    <img :src="el.src" alt="" class="control-images__img">
+                  </div>
+                  <button @click="e => rmLocalElement(i)" type="button" class="control-images__close-btn"></button>
+                </li>
+
+                <li :key="'i'+el.id" v-show="el.showInput" class="control-images__item">
+                  <div class="image-drop image-drop--inline">
+                    <input @change="e => loadImage(e, el)" class="visually-hidden control-images__input" type="file" :name="'image-'+el.id" :id="'image-'+el.id">
+                    <label class="image-drop__zone control-images__dropzone" :for="'image-'+el.id">
+                      Выберите изображение
+                    </label>
+                  </div>
+                </li>
+
+              </template>
+
+              <input v-model="mainImageId" type="hidden">
             </ul>
 
-            <textarea class="ckeditor" id="ckeditor"></textarea>
+            <textarea class="ckeditor"></textarea>
+
+            <ul class="control-images">
+              <!-- Изображения с сервера -->
+              <li class="control-images__item">
+                <button @click="setMainImage" type="button" class="control-images__main-btn"></button>
+                <div class="control-images__img-wrapper">
+                  <img src="../../img/nature-1.jpg" alt="" class="control-images__img">
+                </div>
+                <button @click="rmRemoteElement" type="button" class="control-images__close-btn"></button>
+              </li>
+              
+              <!-- Изображения только что загруженные юзером -->
+              <template v-for="(el, i) in thumbs">
+
+                <li :key="'t'+el.id" v-show="el.showThumb" class="control-images__item">
+                  <button @click="setMainImage" type="button" class="control-images__main-btn"></button>
+                  <div class="control-images__img-wrapper">
+                    <img :src="el.src" alt="" class="control-images__img">
+                  </div>
+                  <button @click="e => rmLocalElement(i)" type="button" class="control-images__close-btn"></button>
+                </li>
+
+                <li :key="'i'+el.id" v-show="el.showInput" class="control-images__item">
+                  <div class="image-drop image-drop--inline">
+                    <input @change="e => loadImage(e, el)" class="visually-hidden control-images__input" type="file" :name="'image-'+el.id" :id="'image-'+el.id">
+                    <label class="image-drop__zone control-images__dropzone" :for="'image-'+el.id">
+                      Выберите изображение
+                    </label>
+                  </div>
+                </li>
+
+              </template>
+
+              <input v-model="mainImageId" type="hidden">
+            </ul>
+            
+            <textarea class="ckeditor"></textarea>
+            
           </div>
         </div>
 

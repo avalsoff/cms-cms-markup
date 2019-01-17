@@ -27,6 +27,9 @@ const config = {
   output: {
     filename: "./js/bundle.js"
   },
+  devServer: {
+    host: '192.168.1.44'
+  },
   devtool: "source-map",
   mode: "production",
   optimization: {

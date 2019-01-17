@@ -8,6 +8,7 @@
   &__description {
     flex: 0 0 30%;
     margin-right: 7%;
+    min-width: 360px;
   }
 
   &__desc-title {
@@ -27,5 +28,49 @@
   &__header-composition {
     margin-bottom: 30px;
     margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 1640px) {
+  body .big-form {
+    &__group {
+      flex-direction: column;
+    }
+    &__description,
+    &__body {
+      flex: 1 0 100%;
+    }
+    &__description {
+      margin-bottom: 15px;
+    }
+    &__group {
+      border-top: none;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  body .big-form {
+    &__lg-row {
+      flex-direction: column;
+
+      > .col {
+        padding-right: 0;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  body .big-form {
+    &__md-row {
+      flex-direction: column;
+
+      > .col {
+        padding-right: 0;
+      }
+    }
   }
 }
